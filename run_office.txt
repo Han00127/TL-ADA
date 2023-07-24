@@ -1,0 +1,13 @@
+
+# How to run 
+python train.py --gpu_id 2 --dset office-home --s 0 --max_epoch 1 --output_src ckps/source/ --output ckps/0523/full_tsne_20%/
+                            데이터셋 이름     소스 도메인  에폭       사전학습된 모델 로드 위치   저장위치                            
+                            
+                            
+예를 들어, 오피스 경우 
+python train.py --gpu_id 1 --dset office --s 0 --max_epoch 1 --output_src ckps/source/ --output ckps/0831/name_of_test 
+
+거의 비슷한데 visda의 경우는 소스 사전 학습모델 위치가 다름 --output_src ckps/source_visda_resnet50/로 로드 가능. 
+
+안될경우, model_text.py 가지고 사전 훈련 시킬수 있음. 
+
